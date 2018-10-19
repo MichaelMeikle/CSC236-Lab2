@@ -6,6 +6,10 @@ public class AuctionEntry implements Comparable{
 	private Person person;
 	//Date variable
 	public AuctionEntry(String name, int startBid, int maxBid) {
+		if(startBid > maxBid) {
+			System.out.println("Error: Starting bid is larger than your selected max bid, the start bid has been adjusted to the max bid");
+			startBid = maxBid;
+		}
 		bid = new Bid(startBid, maxBid);
 		person = new Person(name);
 	}

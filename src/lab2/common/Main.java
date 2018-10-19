@@ -2,7 +2,8 @@ package lab2.common;
 
 public class Main {
 	public static void main(String[] args) {
-		
+		AuctionEntry testEntry = new AuctionEntry("TestName", 1, 5);
+		System.out.println(testEntry);
 	}
 }
 /*
